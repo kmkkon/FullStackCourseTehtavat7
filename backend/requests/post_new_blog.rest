@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRlc3RlcjEiLCJpZCI6IjViZDlhNjEwZjE0YTY1MTgyYzYwY2U0YiIsImlhdCI6MTU0MDk5MjczNX0.6vVaRmxDkS5KlZcXIATLKJCCrZxbu8P8PuJPcz52Ti0
+
+{
+    "title": "This is not the life I ordered part 2",
+    "author": "Vuoden siivooja",
+    "url": "http://not-the-life-i-ordered.blogspot.commi/",
+    "likes": 0
+}
