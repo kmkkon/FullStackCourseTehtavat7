@@ -26,19 +26,14 @@ class Blog extends React.Component{
   }
 
   render() {
-    const blogStyle = {
-      paddingTop: 10,
-      paddingLeft: 2,
-      border: 'solid',
-      borderWidth: 1,
-      marginBottom: 5
-    }
     //console.log(this.props)
-    if (this.props.blog.user === undefined) this.state.showdeletebutton = true
+    if (this.props.blog===undefined) this.state.showdeletebutton = true
+    else if (this.props.blog.user === undefined) this.state.showdeletebutton = true
     else if (this.props.blog.user.username === this.props.user.username) this.state.showdeletebutton = true
     const hideButton = { display: this.state.showdeletebutton ? '' : 'none' }
 
-    return (
+    if (this.props.blog === undefined) return <div></div>
+    else return (
       <div>
         <div className="moreContent">
           <Segment>

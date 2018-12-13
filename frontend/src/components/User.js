@@ -9,7 +9,7 @@ class User extends React.Component{
   }
 
   render() {
-    if (this.props.user !== null)
+    if (this.props.user !== undefined)
     {
       return (
         <Segment>
